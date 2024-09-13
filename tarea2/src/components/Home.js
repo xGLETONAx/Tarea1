@@ -1,6 +1,5 @@
-// src/components/Home.js
 import React from 'react';
-import { Carousel, Container, Row, Col} from 'react-bootstrap';
+import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
@@ -17,11 +16,11 @@ function Home() {
           <Navbar.Collapse id="navbar-nav">
             <Nav className="me-auto">
               <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Inicio</a>
-              <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Desarrollo Web</a>
-              <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Arquitectura de Computadoras II</a>
-              <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Análisis de Sistemas II</a>
-              <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Ética Profesional</a>
-              <a className='btn btn-secondary m-1 btn-md' type="button" href="/">Redes de Computadoras I</a>
+              <a className='btn btn-secondary m-1 btn-md' type="button" href="/desarrollo-web">Desarrollo Web</a>
+              <a className='btn btn-secondary m-1 btn-md' type="button" href="/arquitectura-computadoras">Arquitectura de Computadoras II</a>
+              <a className='btn btn-secondary m-1 btn-md' type="button" href="/analisis-sistemas">Análisis de Sistemas II</a>
+              <a className='btn btn-secondary m-1 btn-md' type="button" href="/etica-profesional">Ética Profesional</a>
+              <a className='btn btn-secondary m-1 btn-md' type="button" href="/redes-computadoras">Redes de Computadoras I</a>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -30,22 +29,22 @@ function Home() {
       {/* Carrusel */}
       <center>
       <div className='carrusel-edit mt-2'>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={`${process.env.PUBLIC_URL}/img/img1.jpg`}
-            alt="Primera imagen"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={`${process.env.PUBLIC_URL}/img/img2.jpg`}
-            alt="Segunda imagen"
-          />
-        </Carousel.Item>
-      </Carousel>
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={`${process.env.PUBLIC_URL}/img/img1.jpg`}
+              alt="Primera imagen"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={`${process.env.PUBLIC_URL}/img/img2.jpg`}
+              alt="Segunda imagen"
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
       </center>
 
@@ -60,67 +59,66 @@ function Home() {
       </Container>
 
       {/* Listado de cursos */}
-        <Container className="my-5">
-            <h2>Cursos Disponibles</h2>
+      <Container className="my-5">
+        <h2>Cursos Disponibles</h2>
         <Row className="justify-content-center">
-            <Col md={2}>
+          <Col md={2}>
             <Card>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img3.jpg`} />
-                <Card.Body>
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img3.jpg`} />
+              <Card.Body>
                 <Card.Title>Desarrollo Web</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                </Card.Body>
+              </Card.Body>
             </Card>
-            </Col>
-            <Col md={2}>
+          </Col>
+          <Col md={2}>
             <Card>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img4.jpg`} />
-                <Card.Body>
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img4.jpg`} />
+              <Card.Body>
                 <Card.Title>Arquitectura de Computadoras II</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                </Card.Body>
+              </Card.Body>
             </Card>
-            </Col>
-            <Col md={2}>
+          </Col>
+          <Col md={2}>
             <Card>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img5.jpg`} />
-                <Card.Body>
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img5.jpg`} />
+              <Card.Body>
                 <Card.Title>Análisis de Sistemas II</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                </Card.Body>
+              </Card.Body>
             </Card>
-            </Col>
-            <Col md={2}>
+          </Col>
+          <Col md={2}>
             <Card>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img6.jpg`} />
-                <Card.Body>
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img6.jpg`} />
+              <Card.Body>
                 <Card.Title>Ética Profesional</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                </Card.Body>
+              </Card.Body>
             </Card>
-            </Col>
-            <Col md={2}>
+          </Col>
+          <Col md={2}>
             <Card>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img7.jpg`} />
-                <Card.Body>
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/img7.jpg`} />
+              <Card.Body>
                 <Card.Title>Redes de Computadoras I</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                </Card.Body>
+              </Card.Body>
             </Card>
-            </Col>
+          </Col>
         </Row>
-        </Container>
-
+      </Container>
 
       {/* Footer */}
       <footer className="text-center py-3">
